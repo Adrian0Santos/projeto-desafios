@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+:root {
+    --cor0: #ffa347;
+    --cor1: #FF8000;
+    --cor2: #F58300;
+    --cor3: #FF8800;
+    --cor4: #592B02;
+    --cor5: #054A91;
+    
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Kaushan Script', sans-serif;
+    --fonte-topicos: "Berkshire Swash", serif;
+    --fonte-escrita: "Finger Paint", sans-serif;
+}
+*{
+    font: var(--fonte-padrao);
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+}
+header {
+    background-color: white;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.400);
+    white-space: 600px;
+    padding: 3px;
+    margin: 2px;
+
+}
+header >  h1 {
+    font: bolder 2em var(--fonte-destaque);
+    color: var(--cor5);
+}
+section {
+    color: var(--cor5);
+    background-color: white;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.400);
+    white-space: 600px;
+    padding: 10px;
+    margin: 2px;
+}
+.volta > h2 {
+    color: var(--cor4);
+    font: bolder 1em var(--fonte-topicos);
+}
+a {
+    color: var(--cor5);
+}
+p {
+    text-align: center;
+    text-indent: 0em;
+    line-height: 2em;
+}
