@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icone-AS/icone-AS.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="../styleprimario.css">
+    <style>
+        caption {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.5em;
+            padding: 5px;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th {
+            color: white;
+            background-color: gray;
+            font-weight: bolder;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th.media {
+            text-align: left;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td.total {
+            color: white;
+            background-color: gray;
+        }
+        .destaque {
+            font-weight: bolder;
+        }
+        .materia {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplos de tabelas mescladas </h1>
+    </header>
+    <main>
+        <section>
+            <table>
+                <caption>Tabela completa</caption>
+                <tr>
+                    <th scope="col" rowspan="2">Áres</th>
+                    <th scope="col" rowspan="2">Disciplinas</th>
+                    <th scope="colgroup" colspan="2">Notas</th>
+                    <th scope="col" rowspan="2">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="destaque">Exatas</td>
+                    <td class="materia">Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="materia">Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="materia">Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="materia">Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="colgroup" colspan="4" class="media">Média de Exatas</th>
+                    <td class="total">0.0</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="destaque">Humanas</td>
+                    <td class="materia">História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <td class="materia">Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th scope="colgroup" colspan="4" class="media">Média de Humanas</th>
+                    <td class="total">0.0</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
