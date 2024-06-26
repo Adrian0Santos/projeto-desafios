@@ -68,12 +68,17 @@ strong {
      color: var(--cor3);
      font-family: var(--fonte-escrita);
 }
-article > h3 > a {
-     color: var(--cor5);
-     font: bolder 1.7em var(--fonte-destaque);
-     padding: 0px;
-     margin-bottom: 30px;
-     
+h3#redes-sociais img {
+     width: 50px;
+     margin: 5px;
+     border-radius: 50%;
+     box-shadow: 2px 2px 5px var(--cor5);
+     box-sizing: border-box;
+}
+h3#redes-sociais img:hover {
+      border: 2px solid var(--cor1);
+      transform: translate(-3px, -3px);
+      transition: transform 0.5s;
 }
 aside {
      background-color: var(--cor0);
